@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker-compose -f docker-compose-ci.yml up -d
+  - sleep 15
+  - docker-compose logs
+
+script:
+  - docker ps
+  - wget http://localhost:8080 -O jira.html
