@@ -1,0 +1,38 @@
+jira-server:
+    image: matisq/jira-server
+    ports:
+        - 8080:8080
+    links:
+        - postgres
+    environment:
+        JIRA_VERSION: ${JIRA_VERSION}
+        JIRA_HOME: /home/jira
+        JIRA_SERVER_ID: jira-server
+    volumes_from:
+        - jira-data
+
+jira-data:
+    image: busybox
+    tty: true
+    volumes:
+        - /home/jira
+
+postgres:
+    image: postgres:latest
+    ports:
+        - 5432:5432
+    environment:
+        PGDATA: /var/lib/postgresql/data/pgdata
+        POSTGRES_DB: jira
+        POSTGRES_USER: jira
+        POSTGRES_PASSWORD: jira
+    tty: true
+    stdin_open: true
+    volumes_from:
+        - postgres-data
+
+postgres-data:
+    image: busybox
+    tty: true
+    volumes:
+        - /var/lib/postgresql/data/pgdata

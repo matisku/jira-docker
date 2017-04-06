@@ -1,2 +1,3 @@
-# jira-docker
-Atlassian JIRA in Docker
+# JIRA Server
+
+UNDER DEVELOPMENT.
