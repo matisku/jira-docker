@@ -28,7 +28,7 @@ Once stack will start, provide a license. If you are using `docker-compose.yml` 
 `POSTGRES_PASSWORD` - Database Password. Default: `jira`
 
 ### Ports:
-Bamboo Server: `8080
+Bamboo Server: `8080`
 Database: `5432`
 
 ## License
