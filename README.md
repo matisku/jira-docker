@@ -1,7 +1,9 @@
 # JIRA Server for Docker
-Atlassian JIRA Server.
-
 Set of docker images to install [Atlassian JIRA Server](https://www.atlassian.com/software/jira) based on [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker).
+
+## Metainfo
+[![Build Status](https://travis-ci.org/matisku/jira-docker.svg?branch=master)](https://travis-ci.org/matisku/jira-docker)    
+[![](https://images.microbadger.com/badges/image/matisq/jira-server.svg)](https://microbadger.com/images/matisq/jira-server "Get your own image badge on microbadger.com")   
 
 ## Info
 This is a [JIRA Stack](https://github.com/matisku/jira-docker). You can download [docker-compose.yml](https://github.com/matisku/jira-docker/blob/master/docker-compose.yml) and check out how it works!
