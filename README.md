@@ -13,18 +13,18 @@ Set of docker images to install [Atlassian JIRA Server](https://www.atlassian.co
 Once stack will start, provide a license. If you are using `docker-compose.yml` from my repository, as a database hostname use `postgres` and for database user and password use `jira`.
 
 ## Environment
-###JIRA Server:
+### JIRA Server:
 `JIRA_HOME` - Bamboo home directory. Default: `/home/jira`
 `JIRA_VERSION` - The version to install an run. Default: `7.3.5`
 
-###Database:
+### Database:
 `PGDATA` - Database Storage Folder. Default: `/var/lib/postgresql/data/pgdata`
 `POSTGRES_DB` - Database Name. Default: `jiradb`
 `POSTGRES_USER` - Database User. Default: `jira`
 `POSTGRES_PASSWORD` - Database Password. Default: `jira`
 
-###Ports:
-Bamboo Server: `8080
+### Ports:
+Bamboo Server: `8080`
 Database: `5432`
 
 ## License
