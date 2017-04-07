@@ -10,4 +10,4 @@ before_install:
 
 script:
   - docker ps
-  - wget http://localhost:8080 -O jira.html
+  - docker-compose logs
