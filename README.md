@@ -16,7 +16,6 @@ This is a [JIRA Stack](https://github.com/matisku/jira-docker). You can download
 Once stack will start, provide a license. If you are using `docker-compose.yml` from my repository, as a database hostname use `postgres` and for database user and password use `jira`.
 
 ## Environment
-
 ### JIRA Server:
 `JIRA_HOME` - Bamboo home directory. Default: `/home/jira`
 `JIRA_VERSION` - The version to install an run. Default: `7.3.5`
