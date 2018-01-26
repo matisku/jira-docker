@@ -26,13 +26,12 @@ ENV LC_ALL en_US.UTF-8
 # Upgrade packages on image
 # Install wget
 RUN locale-gen en_US.UTF-8 &&\
-    apt-get -q update &&\
-    DEBIAN_FRONTEND="noninteractive" apt-get -q upgrade -y -o Dpkg::Options::="--force-confnew" --no-install-recommends &&\
-    DEBIAN_FRONTEND="noninteractive" apt-get -q install -y wget --no-install-recommends &&\
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections &&\
     add-apt-repository ppa:webupd8team/java &&\
     apt-get -q update &&\
-    DEBIAN_FRONTEND="noninteractive" apt-get -q install -y oracle-java8-installer oracle-java8-set-default --no-install-recommends
+    DEBIAN_FRONTEND="noninteractive" apt-get -q upgrade -y -o Dpkg::Options::="--force-confnew" --no-install-recommends &&\
+    DEBIAN_FRONTEND="noninteractive" apt-get -q install -y wget --no-install-recommends &&\
+    DEBIAN_FRONTEND="noninteractive" apt-get -q install -y oracle-java8-installer oracle-java8-set-default --no-install-recommends &&\
     apt-get -q autoremove &&\
     apt-get -q clean -y && rm -rf /var/lib/apt/lists/* && rm -f /var/cache/apt/*.bin && rm -f /var/tmp/*
 
