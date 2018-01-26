@@ -20,7 +20,7 @@ Once stack will start, provide a license. If you are using `docker-compose.yml` 
 ## Environment
 ### JIRA Server:
 `JIRA_HOME` - Bamboo home directory. Default: `/home/jira`   
-`JIRA_VERSION` - The version to install an run. Default: `7.3.4`   
+`JIRA_VERSION` - The version to install an run. Default: `7.7.0`   
 
 ### Database:
 `PGDATA` - Database Storage Folder. Default: `/var/lib/postgresql/data/pgdata`   
@@ -33,7 +33,7 @@ JIRA Server: `8080`
 Database: `5432`   
 
 ## License
-Copyright © 2017 Mateusz Trojak. See LICENSE for details.
+Copyright © 2017 - 2018 Mateusz Trojak. See LICENSE for details.
 
 ## Contributors
 Any forks are welcome!
